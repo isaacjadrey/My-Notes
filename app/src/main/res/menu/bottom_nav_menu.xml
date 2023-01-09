@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <item
+        android:id="@+id/noteListFragment"
+        android:icon="@drawable/ic_note"
+        android:title="@string/notes" />
+    <item
+        android:id="@+id/quoteListFragment"
+        android:icon="@drawable/ic_quote"
+        android:title="@string/quotes" />
+    <item
+        android:id="@+id/todoListFragment"
+        android:icon="@drawable/ic_todo"
+        android:title="@string/todo" />
 </menu>

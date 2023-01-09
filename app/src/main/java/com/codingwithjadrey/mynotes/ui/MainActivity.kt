@@ -1,7 +1,8 @@
-package com.codingwithjadrey.mynotes
+package com.codingwithjadrey.mynotes.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.codingwithjadrey.mynotes.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
