@@ -1,15 +1,15 @@
-package com.codingwithjadrey.mynotes.ui.todo.detail
+package com.codingwithjadrey.mynotes.ui.note.list
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.codingwithjadrey.mynotes.databinding.FragmentTodoDetailBinding
+import com.codingwithjadrey.mynotes.databinding.FragmentNoteListBinding
 
-class TodoDetailFragment : Fragment() {
+class NoteListFragment : Fragment() {
 
-    private var _binding: FragmentTodoDetailBinding? = null
+    private var _binding: FragmentNoteListBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -17,7 +17,7 @@ class TodoDetailFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentTodoDetailBinding.inflate(inflater, container, false)
+        _binding = FragmentNoteListBinding.inflate(inflater, container, false)
         return binding.root
     }
 
