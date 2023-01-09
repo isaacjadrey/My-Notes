@@ -3,6 +3,12 @@
 ![Language](https://img.shields.io/badge/language-Kotlin-orange.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/isaacjadrey/My-Notes/LICENSE)
 
+<div align="center">
+  <sub>Built with ❤︎ by
+  <a href="https://github.com/isaacjadrey">Isaac Jadrey Ongwara Jr</a>
+</div>
+<br/>
+
 - A notes app for saving your notes, also contains quotes and todo tasks built with kotlin and Firebase
   MVVM
 
