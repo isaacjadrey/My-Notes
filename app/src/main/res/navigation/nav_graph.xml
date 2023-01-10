@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/noteListFragment"
         android:name="com.codingwithjadrey.mynotes.ui.note.list.NoteListFragment"
-        android:label="NoteListFragment"
+        android:label="Notes"
         tools:layout="@layout/fragment_note_list">
         <action
             android:id="@+id/action_noteListFragment_to_addNoteFragment"
@@ -20,17 +20,17 @@
     <fragment
         android:id="@+id/addNoteFragment"
         android:name="com.codingwithjadrey.mynotes.ui.note.add.AddNoteFragment"
-        android:label="AddNoteFragment"
+        android:label="Add Note"
         tools:layout="@layout/fragment_add_note" />
     <fragment
         android:id="@+id/noteDetailFragment"
         android:name="com.codingwithjadrey.mynotes.ui.note.detail.NoteDetailFragment"
-        android:label="NoteDetailFragment"
+        android:label="Note Detail"
         tools:layout="@layout/fragment_note_detail" />
     <fragment
         android:id="@+id/quoteListFragment"
         android:name="com.codingwithjadrey.mynotes.ui.quote.list.QuoteListFragment"
-        android:label="QuoteListFragment"
+        android:label="Quotes"
         tools:layout="@layout/fragment_quote_list">
         <action
             android:id="@+id/action_quoteListFragment_to_addQuoteFragment"
@@ -42,17 +42,17 @@
     <fragment
         android:id="@+id/addQuoteFragment"
         android:name="com.codingwithjadrey.mynotes.ui.quote.add.AddQuoteFragment"
-        android:label="AddQuoteFragment"
+        android:label="Add Quote"
         tools:layout="@layout/fragment_add_quote" />
     <fragment
         android:id="@+id/quoteDetailFragment"
         android:name="com.codingwithjadrey.mynotes.ui.quote.detail.QuoteDetailFragment"
-        android:label="QuoteDetailFragment"
+        android:label="Quote Detail"
         tools:layout="@layout/fragment_quote_detail" />
     <fragment
         android:id="@+id/todoListFragment"
         android:name="com.codingwithjadrey.mynotes.ui.todo.list.TodoListFragment"
-        android:label="TodoListFragment"
+        android:label="Todo"
         tools:layout="@layout/fragment_todo_list">
         <action
             android:id="@+id/action_todoListFragment_to_addTodoFragment"
@@ -64,11 +64,11 @@
     <fragment
         android:id="@+id/addTodoFragment"
         android:name="com.codingwithjadrey.mynotes.ui.todo.add.AddTodoFragment"
-        android:label="AddTodoFragment"
+        android:label="Add Todo"
         tools:layout="@layout/fragment_add_todo" />
     <fragment
         android:id="@+id/todoDetailFragment"
         android:name="com.codingwithjadrey.mynotes.ui.todo.detail.TodoDetailFragment"
-        android:label="TodoDetailFragment"
+        android:label="Todo Detail"
         tools:layout="@layout/fragment_todo_detail" />
 </navigation>
