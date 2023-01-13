@@ -2,11 +2,13 @@
     <string name="app_name">My Notes</string>
     <string name="notes">Notes</string>
     <string name="quotes">Quotes</string>
-    <string name="todo">Todo</string>
+    <string name="todo">To-dos</string>
     <string name="add_note_icon">add notes</string>
     <string name="add_quote_icon">add quotes</string>
-    <string name="add_todo_icon">add todo</string>
+    <string name="add_todo_icon">add to-dos</string>
     <string name="title">Title</string>
     <string name="_09_00">09:00</string>
     <string name="comment">Comment</string>
+    <string name="save">Save</string>
+    <string name="note_something_down_here">Note something down here</string>
 </resources>
