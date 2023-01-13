@@ -48,13 +48,28 @@ class AddNoteFragment : Fragment(), StateListener {
             toolbarAddNote.setOnMenuItemClickListener { item ->
                 when (item.itemId) {
                     R.id.action_save -> {
-                        noteViewModel.addNote()
+                        if (validation()) {
+                            noteViewModel.addNote()
+                        }
                         true
                     }
                     else -> false
                 }
             }
         }
+    }
+
+    private fun validation(): Boolean {
+        var isValid = true
+        if (binding.title.text.toString().isEmpty()) {
+            isValid = false
+            makeToast("Enter title")
+        }
+        if (binding.body.text.toString().isEmpty()) {
+            isValid = false
+            makeToast("Enter body")
+        }
+        return isValid
     }
 
     override fun onDestroyView() {
@@ -68,6 +83,7 @@ class AddNoteFragment : Fragment(), StateListener {
 
     override fun success() {
         binding.progressView.gone()
+        findNavController().navigate(AddNoteFragmentDirections.actionAddNoteFragmentToNoteListFragment())
         makeToast("added note successfully")
     }
 

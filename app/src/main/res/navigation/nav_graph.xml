@@ -21,7 +21,11 @@
         android:id="@+id/addNoteFragment"
         android:name="com.codingwithjadrey.mynotes.ui.note.add.AddNoteFragment"
         android:label="Add Note"
-        tools:layout="@layout/fragment_add_note" />
+        tools:layout="@layout/fragment_add_note" >
+        <action
+            android:id="@+id/action_addNoteFragment_to_noteListFragment"
+            app:destination="@id/noteListFragment" />
+    </fragment>
     <fragment
         android:id="@+id/noteDetailFragment"
         android:name="com.codingwithjadrey.mynotes.ui.note.detail.NoteDetailFragment"
