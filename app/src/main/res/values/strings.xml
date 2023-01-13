@@ -11,4 +11,5 @@
     <string name="comment">Comment</string>
     <string name="save">Save</string>
     <string name="note_something_down_here">Note something down here</string>
+    <string name="adding_note_now">Adding note now...</string>
 </resources>
