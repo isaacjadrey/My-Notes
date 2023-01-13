@@ -6,11 +6,11 @@ import kotlinx.parcelize.Parcelize
 import java.util.Date
 
 @Parcelize
-data class Notes(
+data class Note(
         var id: String,
         val title: String,
         val body: String,
-        val tags: MutableList<String> = arrayListOf(),
-        @ServerTimestamp
-        val date: Date = Date()
+//        val tags: MutableList<String> = arrayListOf(),
+//        @ServerTimestamp
+//        val date: Date = Date()
 ) : Parcelable
