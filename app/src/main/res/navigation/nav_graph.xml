@@ -21,7 +21,7 @@
         android:id="@+id/addNoteFragment"
         android:name="com.codingwithjadrey.mynotes.ui.note.add.AddNoteFragment"
         android:label="Add Note"
-        tools:layout="@layout/fragment_add_note" >
+        tools:layout="@layout/fragment_add_note">
         <action
             android:id="@+id/action_addNoteFragment_to_noteListFragment"
             app:destination="@id/noteListFragment" />
@@ -33,7 +33,7 @@
         tools:layout="@layout/fragment_note_detail">
         <argument
             android:name="currentNote"
-            app:argType="com.codingwithjadrey.mynotes.data.model.Note"/>
+            app:argType="com.codingwithjadrey.mynotes.data.model.Note" />
     </fragment>
     <fragment
         android:id="@+id/quoteListFragment"
@@ -51,7 +51,11 @@
         android:id="@+id/addQuoteFragment"
         android:name="com.codingwithjadrey.mynotes.ui.quote.add.AddQuoteFragment"
         android:label="Add Quote"
-        tools:layout="@layout/fragment_add_quote" />
+        tools:layout="@layout/fragment_add_quote" >
+        <action
+            android:id="@+id/action_addQuoteFragment_to_quoteListFragment"
+            app:destination="@id/quoteListFragment" />
+    </fragment>
     <fragment
         android:id="@+id/quoteDetailFragment"
         android:name="com.codingwithjadrey.mynotes.ui.quote.detail.QuoteDetailFragment"
