@@ -84,11 +84,11 @@ class AddNoteFragment : Fragment(), StateListener {
     override fun success() {
         binding.progressView.gone()
         findNavController().navigate(AddNoteFragmentDirections.actionAddNoteFragmentToNoteListFragment())
-        makeToast("added note successfully")
+        makeToast("note added successfully")
     }
 
     override fun failure(message: String) {
         binding.progressView.gone()
-        makeToast(message)
+        makeToast("Failed to add note")
     }
 }

@@ -2,11 +2,17 @@ package com.codingwithjadrey.mynotes.repository
 
 import com.codingwithjadrey.mynotes.data.firebase.FirebaseData
 import com.codingwithjadrey.mynotes.data.model.Note
+import com.codingwithjadrey.mynotes.util.Response
 import javax.inject.Inject
 
-class NoteRepository @Inject constructor(private val firebaseData: FirebaseData) {
+interface NoteRepository {
+//    fun noteId() = firebaseData.noteId()
+//
+//    fun addNote(note: Note) = firebaseData.addNote(note)
 
-    fun noteId() = firebaseData.noteId()
+    fun noteId(): String
 
-    fun addNote(note: Note) = firebaseData.addNote(note)
+    suspend fun addNoteToFirestore(note: Note)
+
+    fun getNoteFromFirestore(result: (Response<List<Note>>) -> Unit)
 }
