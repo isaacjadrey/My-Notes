@@ -1,4 +1,4 @@
-package com.codingwithjadrey.mynotes.repository
+package com.codingwithjadrey.mynotes.repository.note
 
 import com.codingwithjadrey.mynotes.data.model.Note
 import com.codingwithjadrey.mynotes.util.Constant.NOTE_COLLECTION
@@ -7,11 +7,11 @@ import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.coroutines.tasks.await
 import javax.inject.Inject
 
-class NoteRepositoryImp @Inject constructor(private val firestore: FirebaseFirestore): NoteRepository {
+class NoteRepositoryImp @Inject constructor(private val firestore: FirebaseFirestore) :
+    NoteRepository {
 
     private val ref = firestore.collection(NOTE_COLLECTION)
     val id = ref.document().id
-
 
     override fun noteId(): String = id
 

@@ -7,13 +7,10 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.codingwithjadrey.mynotes.data.model.Note
-import com.codingwithjadrey.mynotes.repository.NoteRepository
+import com.codingwithjadrey.mynotes.repository.note.NoteRepository
 import com.codingwithjadrey.mynotes.util.Response
 import com.codingwithjadrey.mynotes.util.StateListener
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
-import io.reactivex.rxjava3.disposables.CompositeDisposable
-import io.reactivex.rxjava3.schedulers.Schedulers
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import javax.inject.Inject

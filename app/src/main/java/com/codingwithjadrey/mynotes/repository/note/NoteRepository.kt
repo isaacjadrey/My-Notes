@@ -1,4 +1,4 @@
-package com.codingwithjadrey.mynotes.repository
+package com.codingwithjadrey.mynotes.repository.note
 
 import com.codingwithjadrey.mynotes.data.firebase.FirebaseData
 import com.codingwithjadrey.mynotes.data.model.Note
