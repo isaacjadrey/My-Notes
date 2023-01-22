@@ -11,5 +11,7 @@
     <string name="comment">Comment</string>
     <string name="save">Save</string>
     <string name="note_something_down_here">Note something down here</string>
-    <string name="adding_note_now">Adding note now...</string>
+    <string name="adding_note_now">Adding note now…</string>
+    <string name="quote_title">Enter Quote here</string>
+    <string name="author">Enter Quote Author</string>
 </resources>
