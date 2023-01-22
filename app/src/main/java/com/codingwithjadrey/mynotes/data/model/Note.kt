@@ -7,9 +7,9 @@ import java.util.Date
 
 @Parcelize
 data class Note(
-        var id: String,
-        val title: String,
-        val body: String,
+        var id: String = "",
+        var title: String = "",
+        var body: String = "",
 //        val tags: MutableList<String> = arrayListOf(),
 //        @ServerTimestamp
 //        val date: Date = Date()
