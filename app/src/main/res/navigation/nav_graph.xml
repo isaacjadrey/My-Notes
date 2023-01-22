@@ -30,7 +30,11 @@
         android:id="@+id/noteDetailFragment"
         android:name="com.codingwithjadrey.mynotes.ui.note.detail.NoteDetailFragment"
         android:label="Note Detail"
-        tools:layout="@layout/fragment_note_detail" />
+        tools:layout="@layout/fragment_note_detail">
+        <argument
+            android:name="currentNote"
+            app:argType="com.codingwithjadrey.mynotes.data.model.Note"/>
+    </fragment>
     <fragment
         android:id="@+id/quoteListFragment"
         android:name="com.codingwithjadrey.mynotes.ui.quote.list.QuoteListFragment"
